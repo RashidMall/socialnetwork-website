@@ -2,13 +2,14 @@
 
 namespace App\Controller;
 
-use App\Service\Greeting;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpFoundation\Session\SessionInterface;
 use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Symfony\Component\Routing\Annotation\Route;
+use Symfony\Component\Routing\RouterInterface;
 use Twig_Environment as twig;
 
 /**
@@ -27,11 +28,26 @@ class BlogController extends AbstractController
      * @var SessionInterface
      */
     private $session;
+    /**
+     * @var RouterInterface
+     */
+    private $router;
 
-    public function __construct(twig $twig, SessionInterface $session)
+    /**
+     * BlogController constructor.
+     * @param twig $twig
+     * @param SessionInterface $session
+     * @param RouterInterface $router
+     */
+    public function __construct(
+        twig $twig,
+        SessionInterface $session,
+        RouterInterface $router
+    )
     {
         $this->twig = $twig;
         $this->session = $session;
+        $this->router = $router;
     }
 
     /**
@@ -61,6 +77,8 @@ class BlogController extends AbstractController
         ];
 
         $this->session->set('posts', $posts);
+
+        return new RedirectResponse($this->router->generate('blog_index'));
     }
 
     /**
@@ -82,5 +100,7 @@ class BlogController extends AbstractController
                 'post' => $posts[$id],
             ]
         );
+
+        return new Response($html);
     }
 }
