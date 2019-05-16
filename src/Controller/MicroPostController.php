@@ -4,6 +4,7 @@ namespace App\Controller;
 
 use App\Repository\MicroPostRepository;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
 
 /**
  * Class MicroPostController
