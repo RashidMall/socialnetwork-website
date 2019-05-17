@@ -4,9 +4,13 @@ namespace App\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * @ORM\Entity(repositoryClass="App\Repository\UserRepository")
+ * @UniqueEntity(fields="email", message="This email address is already in use")
+ * @UniqueEntity(fields="username", message="This username is already in use")
  */
 class User implements UserInterface, \Serializable
 {
@@ -19,6 +23,8 @@ class User implements UserInterface, \Serializable
 
     /**
      * @ORM\Column(type="string", length=64, unique=true)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=3, max=64)
      */
     private $username;
 
@@ -28,9 +34,22 @@ class User implements UserInterface, \Serializable
     private $password;
 
     /**
+     * @Assert\NotBlank()
+     * @Assert\Length(min=8, max=4096)
+     */
+    private $plainPassword;
+
+    /**
      * @ORM\Column(type="string", length=254, unique=true)
      */
     private $email;
+
+    /**
+     * @ORM\Column(type="string", length=64)
+     * @Assert\NotBlank()
+     * @Assert\Length(min=3, max=64)
+     */
+    private $fullName;
 
     /**
      * @return mixed
@@ -64,11 +83,6 @@ class User implements UserInterface, \Serializable
         $this->fullName = $fullName;
     }
 
-    /**
-     * @ORM\Column(type="string", length=64)
-     */
-    private $fullName;
-
     public function getId(): ?int
     {
         return $this->id;
@@ -90,6 +104,22 @@ class User implements UserInterface, \Serializable
     public function setPassword($password): void
     {
         $this->password = $password;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPlainPassword()
+    {
+        return $this->plainPassword;
+    }
+
+    /**
+     * @param mixed $plainPassword
+     */
+    public function setPlainPassword($plainPassword): void
+    {
+        $this->plainPassword = $plainPassword;
     }
 
     public function getSalt()
