@@ -32,6 +32,8 @@ class AppFixtures extends Fixture
             $micro_post->setText('Some random text ' . rand(0, 100));
             $micro_post->setTime(new \DateTime('2019-05-16'));
             $manager->persist($micro_post);
+
+            $micro_post->setUser($this->getReference('rashid_mall'));
         }
 
         $manager->flush();
@@ -45,6 +47,8 @@ class AppFixtures extends Fixture
         $user->setPassword(
             $this->passwordEncoder->encodePassword($user, 'Pass12345')
         );
+
+        $this->setReference('rashid_mall', $user);
 
         $manager->persist($user);
         $manager->flush();
