@@ -6,6 +6,7 @@ use App\Entity\MicroPost;
 use App\Form\MicroPostType;
 use App\Repository\MicroPostRepository;
 use Doctrine\ORM\EntityManagerInterface;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Component\Form\FormFactoryInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
@@ -82,6 +83,7 @@ class MicroPostController
 
     /**
      * @Route("/edit/{id}", name="micro_post_edit")
+     * @Security("is_granted('edit', microPost)", message="Access denied!")
      */
     public function edit(MicroPost $microPost, Request $request){
         $form = $this->formFactory->create(MicroPostType::class, $microPost);
@@ -151,6 +153,7 @@ class MicroPostController
 
     /**
      * @Route("/delete/{id}", name="micro_post_delete")
+     * @Security("is_granted('delete', microPost)", message="Access denied!")
      */
     public function delete(MicroPost $microPost){
         $this->entityManager->remove($microPost);
