@@ -2,6 +2,7 @@
 
 namespace App\Entity;
 
+use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
@@ -50,6 +51,16 @@ class User implements UserInterface, \Serializable
      * @Assert\Length(min=3, max=64)
      */
     private $fullName;
+
+    /**
+     * @ORM\OneToMany(targetEntity="App\Entity\MicroPost", mappedBy="user")
+     */
+    private $microposts;
+
+    public function __construct()
+    {
+        $this->microposts = new ArrayCollection();
+    }
 
     /**
      * @return mixed
@@ -174,5 +185,13 @@ class User implements UserInterface, \Serializable
         list($this->id,
             $this->username,
             $this->password) = unserialize($serialized);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMicroposts()
+    {
+        return $this->microposts;
     }
 }
