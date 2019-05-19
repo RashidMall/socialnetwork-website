@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="956125c7-d7d7-40db-b9bb-3ce99e914fb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Security/MicroPostVoter.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Security/MicroPostVoter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,22 +15,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+            <state relative-caret-position="462">
+              <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Security/MicroPostVoter.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="342">
               <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
               <folding>
                 <element signature="e#34#59#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+              <folding>
+                <element signature="e#631#647#0#Twig" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -81,12 +91,12 @@
         <option value="$PROJECT_DIR$/src/Entity/MicroPost.php" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" />
-        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
         <option value="$PROJECT_DIR$/src/Controller/MicroPostController.php" />
         <option value="$PROJECT_DIR$/templates/micro-post/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/src/Security/MicroPostVoter.php" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
       </list>
     </option>
   </component>
@@ -315,12 +325,12 @@
       <workItem from="1556831862233" duration="3088000" />
       <workItem from="1557871928953" duration="54247000" />
       <workItem from="1558188741738" duration="7501000" />
-      <workItem from="1558210426653" duration="2946000" />
+      <workItem from="1558210426653" duration="3609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67782000" />
+    <option name="totallyTimeSpent" value="68445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="279" y="93" width="1272" height="717" extended-state="0" />
@@ -535,16 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-240">
-          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
-          <folding>
-            <element signature="e#631#647#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/MicroPostController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="282">
@@ -566,13 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -603,6 +596,23 @@
           <folding>
             <element signature="e#34#59#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="14" column="63" selection-start-line="14" selection-start-column="63" selection-end-line="14" selection-end-column="63" />
+          <folding>
+            <element signature="e#631#647#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="44" column="29" selection-start-line="44" selection-start-column="29" selection-end-line="44" selection-end-column="29" />
         </state>
       </provider>
     </entry>
