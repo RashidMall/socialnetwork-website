@@ -66,9 +66,25 @@ class User implements UserInterface, \Serializable
      */
     private $microposts;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\User", mappedBy="following")
+     */
+    private $followers;
+
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\User", mappedBy="followers")
+     * @ORM\JoinTable(name="following",
+     *     joinColumns={@ORM\JoinColumn(name="user_id", referencedColumnName="id")},
+     *     inverseJoinColumns={@ORM\JoinColumn(name="following_id", referencedColumnName="id")}
+     *     )
+     */
+    private $following;
+
     public function __construct()
     {
         $this->microposts = new ArrayCollection();
+        $this->followers = new ArrayCollection();
+        $this->following = new ArrayCollection();
     }
 
     /**
@@ -210,5 +226,21 @@ class User implements UserInterface, \Serializable
     public function getMicroposts()
     {
         return $this->microposts;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFollowers()
+    {
+        return $this->followers;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getFollowing()
+    {
+        return $this->following;
     }
 }

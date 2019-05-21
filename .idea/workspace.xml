@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="956125c7-d7d7-40db-b9bb-3ce99e914fb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/MicroPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MicroPostController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/MicroPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MicroPost.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,13 +28,25 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/MicroPost.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="8" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="31" />
+            <state relative-caret-position="192">
+              <caret line="77" column="10" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="24" />
               <folding>
                 <element signature="e#30#62#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="74" column="76" lean-forward="true" selection-start-line="74" selection-start-column="76" selection-end-line="74" selection-end-column="76" />
+              <folding>
+                <element signature="e#38#86#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -69,7 +81,6 @@
         <option value="$PROJECT_DIR$/src/Controller/RegisterController.php" />
         <option value="$PROJECT_DIR$/templates/register/register.html.twig" />
         <option value="$PROJECT_DIR$/templates/base.html.twig" />
-        <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/src/Security/MicroPostVoter.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
@@ -77,6 +88,7 @@
         <option value="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/MicroPostController.php" />
         <option value="$PROJECT_DIR$/src/Entity/MicroPost.php" />
+        <option value="$PROJECT_DIR$/src/Entity/User.php" />
       </list>
     </option>
   </component>
@@ -189,9 +201,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="279" />
-    <option name="y" value="93" />
-    <option name="width" value="1272" />
+    <option name="x" value="455" />
+    <option name="y" value="94" />
+    <option name="width" value="1120" />
     <option name="height" value="717" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -305,18 +317,18 @@
       <workItem from="1556831862233" duration="3088000" />
       <workItem from="1557871928953" duration="54247000" />
       <workItem from="1558188741738" duration="7501000" />
-      <workItem from="1558210426653" duration="7414000" />
+      <workItem from="1558210426653" duration="12478000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72250000" />
+    <option name="totallyTimeSpent" value="77314000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="279" y="93" width="1272" height="717" extended-state="0" />
+    <frame x="455" y="94" width="1120" height="717" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26879084" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30690297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -545,16 +557,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1102">
-          <caret line="116" column="26" selection-start-line="116" selection-start-column="26" selection-end-line="116" selection-end-column="26" />
-          <folding>
-            <element signature="e#30#78#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -591,10 +593,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/MicroPost.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="31" />
+        <state relative-caret-position="192">
+          <caret line="77" column="10" selection-start-line="77" selection-start-column="7" selection-end-line="77" selection-end-column="24" />
           <folding>
             <element signature="e#30#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="74" column="76" lean-forward="true" selection-start-line="74" selection-start-column="76" selection-end-line="74" selection-end-column="76" />
+          <folding>
+            <element signature="e#38#86#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
