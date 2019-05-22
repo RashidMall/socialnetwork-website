@@ -19,9 +19,13 @@ class FollowerController extends AbstractController
      */
     public function follow(User $userToFollow){
         $currentUser = $this->getUser();
-        $currentUser->getFollowing()->add($userToFollow);
 
-        $this->getDoctrine()->getManager()->flush();
+        // User can't follow himself
+        if($userToFollow->getId() !== $currentUser->getId()){
+            $currentUser->getFollowing()->add($userToFollow);
+
+            $this->getDoctrine()->getManager()->flush();
+        }
 
         return $this->redirectToRoute(
             'micro_post_user',
