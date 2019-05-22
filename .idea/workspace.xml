@@ -4,6 +4,8 @@
     <list default="true" id="956125c7-d7d7-40db-b9bb-3ce99e914fb7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Controller/MicroPostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MicroPostController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Repository/MicroPostRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/MicroPostRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Repository/UserRepository.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/micro-post/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/micro-post/index.html.twig" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +21,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/MicroPostController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+            <state relative-caret-position="343">
+              <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
               <folding>
                 <element signature="e#34#59#0#PHP" expanded="true" />
               </folding>
@@ -28,14 +30,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Repository/MicroPostRepository.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/micro-post/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+            <state relative-caret-position="237">
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
               <folding>
-                <element signature="e#34#59#0#PHP" expanded="true" />
+                <element signature="e#449#464#0#Twig" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="298">
+              <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -72,14 +83,15 @@
         <option value="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" />
         <option value="$PROJECT_DIR$/src/Security/MicroPostVoter.php" />
         <option value="$PROJECT_DIR$/config/packages/security.yaml" />
-        <option value="$PROJECT_DIR$/templates/micro-post/index.html.twig" />
         <option value="$PROJECT_DIR$/templates/micro-post/raw-post.html.twig" />
         <option value="$PROJECT_DIR$/src/Entity/MicroPost.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
         <option value="$PROJECT_DIR$/templates/micro-post/user-posts.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/FollowerController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/MicroPostController.php" />
+        <option value="$PROJECT_DIR$/templates/micro-post/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Repository/MicroPostRepository.php" />
+        <option value="$PROJECT_DIR$/src/Controller/MicroPostController.php" />
+        <option value="$PROJECT_DIR$/src/Repository/UserRepository.php" />
       </list>
     </option>
   </component>
@@ -314,12 +326,12 @@
       <workItem from="1556831862233" duration="3088000" />
       <workItem from="1557871928953" duration="54247000" />
       <workItem from="1558188741738" duration="7501000" />
-      <workItem from="1558210426653" duration="22593000" />
+      <workItem from="1558210426653" duration="27847000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87429000" />
+    <option name="totallyTimeSpent" value="92683000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="455" y="94" width="1120" height="717" extended-state="0" />
@@ -571,13 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/micro-post/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="29" lean-forward="true" selection-end-line="23" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/MicroPost.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
@@ -623,23 +628,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/MicroPostController.php">
+    <entry file="file://$PROJECT_DIR$/templates/micro-post/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="82" column="16" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
+        <state relative-caret-position="237">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
           <folding>
-            <element signature="e#34#59#0#PHP" expanded="true" />
+            <element signature="e#449#464#0#Twig" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Repository/MicroPostRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+        <state relative-caret-position="432">
+          <caret line="64" selection-start-line="64" selection-end-line="64" />
           <folding>
             <element signature="e#34#59#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/MicroPostController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="90" column="48" selection-start-line="90" selection-start-column="48" selection-end-line="90" selection-end-column="48" />
+          <folding>
+            <element signature="e#34#59#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Repository/UserRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
         </state>
       </provider>
     </entry>

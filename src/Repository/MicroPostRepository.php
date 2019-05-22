@@ -49,6 +49,10 @@ class MicroPostRepository extends ServiceEntityRepository
     }
     */
 
+    /**
+     * @param Collection $users
+     * @return mixed
+     */
     public function findAllMicroPostsByUser(Collection $users){
         return $this->createQueryBuilder('mp')
             ->select('mp')
