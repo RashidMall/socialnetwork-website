@@ -1,0 +1,60 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="card-group py-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">
+                    {{ user.fullname }}
+                    <small class="text-muted"> @{{ user.username }}</small>
+                </h5>
+
+                {% if user != app.user %}
+                    {% if user.followers.contains(app.user) %}
+                        <a href="{{ path('follower_unfollow', {'id': user.id}) }}" class="btn btn-outline-danger">Unfollow</a>
+                    {% else %}
+                        <a href="{{ path('follower_follow', {'id': user.id}) }}" class="btn btn-outline-primary">Follow</a>
+                    {% endif %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+    <div class="card-group py-2">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Followers</h5>
+                {% for follower in user.followers %}
+                    <a href="{{ path('micro_post_user',
+                        {'username': follower.username}) }}">
+                        @{{ follower.username }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Following</h5>
+                {% for following_user in user.following %}
+                    <a href="{{ path('micro_post_user',
+                        {'username': following_user.username}) }}">
+                        @{{ following_user.username }}
+                    </a>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    {% for post in posts %}
+        <small class="d-block text-right mt-3">
+            {% if is_granted('edit', post) %}
+                <a href="{{ path('micro_post_edit', {'id': post.id}) }}">Edit</a>
+            {% endif %}
+            {% if is_granted('delete', post) %}
+                <a href="{{ path('micro_post_delete', {'id': post.id}) }}">Delete</a>
+            {% endif %}
+        </small>
+
+        {{ include('micro-post/raw-post.html.twig', {'post': post}) }}
+    {% endfor %}
+{% endblock %}

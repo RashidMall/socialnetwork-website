@@ -175,11 +175,12 @@ class MicroPostController
      * @Route("/user/{username}", name="micro_post_user")
      */
     public function userMicroPosts(User $user){
-        $html = $this->twig->render('micro-post/index.html.twig', [
+        $html = $this->twig->render('micro-post/user-posts.html.twig', [
             'posts' => $this->microPostRepository->findBy(
                 ['user' => $user],
                 ['time' => 'DESC']
-            )
+            ),
+            'user' => $user,
             // 'posts' => $user->getMicroposts();
         ]);
 
