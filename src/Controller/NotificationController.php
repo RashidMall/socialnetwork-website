@@ -36,4 +36,16 @@ class NotificationController extends AbstractController
             => $this->notificationRepository->findUnseenByUser($this->getUser())
         ]);
     }
+
+    /**
+     * @Route("/all", name="notification_all")
+     */
+    public function notifications(){
+        return $this->render('notification/notifications.html.twig', [
+            'notifications' => $this->notificationRepository->findBy([
+                'isSeen' => false,
+                'user' => $this->getUser()
+            ])
+        ]);
+    }
 }
