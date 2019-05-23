@@ -81,11 +81,20 @@ class User implements UserInterface, \Serializable
      */
     private $following;
 
+    /**
+     * @ORM\ManyToMany(targetEntity="App\Entity\MicroPost", mappedBy="likedBy")
+     */
+    private $microPostsLiked;
+
+    /**
+     * User constructor.
+     */
     public function __construct()
     {
         $this->microposts = new ArrayCollection();
         $this->followers = new ArrayCollection();
         $this->following = new ArrayCollection();
+        $this->microPostsLiked = new ArrayCollection();
     }
 
     /**
@@ -244,4 +253,20 @@ class User implements UserInterface, \Serializable
     {
         return $this->following;
     }
+
+    public function follow(User $user){
+        if ($this->getFollowing()->contains($user)){
+            return;
+        }
+        $this->getFollowing()->add($user);
+    }
+
+    /**
+     * @return Collection
+     */
+    public function getMicroPostsLiked()
+    {
+        return $this->microPostsLiked;
+    }
+
 }
