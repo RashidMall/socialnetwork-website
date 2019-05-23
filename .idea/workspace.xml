@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="956125c7-d7d7-40db-b9bb-3ce99e914fb7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -30,7 +29,7 @@
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
               <first_editor>
-                <caret column="23" selection-start-column="23" selection-end-column="23" />
+                <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
               </first_editor>
               <second_editor />
             </state>
@@ -202,7 +201,7 @@
       <path value="$PROJECT_DIR$/vendor/doctrine/doctrine-fixtures-bundle" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="455" />
     <option name="y" value="94" />
     <option name="width" value="1120" />
@@ -325,18 +324,18 @@
       <workItem from="1556831862233" duration="3088000" />
       <workItem from="1557871928953" duration="54247000" />
       <workItem from="1558188741738" duration="7501000" />
-      <workItem from="1558210426653" duration="31670000" />
+      <workItem from="1558210426653" duration="32041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="96506000" />
+    <option name="totallyTimeSpent" value="96877000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="455" y="94" width="1120" height="717" extended-state="0" />
+    <frame x="-1" y="1" width="1602" height="899" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30690297" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2117117" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -663,7 +662,7 @@
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor>
-            <caret column="23" selection-start-column="23" selection-end-column="23" />
+            <caret column="23" lean-forward="true" selection-start-column="23" selection-end-column="23" />
           </first_editor>
           <second_editor />
         </state>
