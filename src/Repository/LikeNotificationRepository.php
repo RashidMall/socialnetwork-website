@@ -3,6 +3,7 @@
 namespace App\Repository;
 
 use App\Entity\LikeNotification;
+use App\Entity\User;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Symfony\Bridge\Doctrine\RegistryInterface;
 
@@ -47,4 +48,13 @@ class LikeNotificationRepository extends ServiceEntityRepository
         ;
     }
     */
+
+    public function findUnseenByUser(User $user){
+        return $this->createQueryBuilder('n')
+            ->select('count(n)')
+            ->where('n.user = :user')
+            ->setParameter('user', $user)
+            ->getQuery()
+            ->getSingleScalarResult();
+    }
 }
