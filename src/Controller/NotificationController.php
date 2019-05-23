@@ -31,7 +31,7 @@ class NotificationController extends AbstractController
      * @Route("/unseen", name="notification_unseen")
      */
     public function unseen(){
-        new JsonResponse([
+        return new JsonResponse([
             'count_notifications'
             => $this->notificationRepository->findUnseenByUser($this->getUser())
         ]);
