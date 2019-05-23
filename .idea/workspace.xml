@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="956125c7-d7d7-40db-b9bb-3ce99e914fb7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/FollowerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/FollowerController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/MicroPost.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/MicroPost.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,11 +16,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="328">
               <caret line="264" column="25" selection-start-line="264" selection-start-column="25" selection-end-line="264" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor>
+                <caret column="23" selection-start-column="23" selection-end-column="23" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -79,6 +90,7 @@
         <option value="$PROJECT_DIR$/src/Controller/FollowerController.php" />
         <option value="$PROJECT_DIR$/src/Entity/MicroPost.php" />
         <option value="$PROJECT_DIR$/src/Entity/User.php" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -313,12 +325,12 @@
       <workItem from="1556831862233" duration="3088000" />
       <workItem from="1557871928953" duration="54247000" />
       <workItem from="1558188741738" duration="7501000" />
-      <workItem from="1558210426653" duration="31027000" />
+      <workItem from="1558210426653" duration="31670000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95863000" />
+    <option name="totallyTimeSpent" value="96506000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="455" y="94" width="1120" height="717" extended-state="0" />
@@ -644,6 +656,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="328">
           <caret line="264" column="25" selection-start-line="264" selection-start-column="25" selection-end-line="264" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor>
+            <caret column="23" selection-start-column="23" selection-end-column="23" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
