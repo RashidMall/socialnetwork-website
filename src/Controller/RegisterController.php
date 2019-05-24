@@ -8,7 +8,7 @@ use App\Entity\User;
 use App\Event\UserRegisterEvent;
 use App\Form\UserType;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use Symfony\Component\EventDispatcher\EventDispatcher;
+use Symfony\Component\EventDispatcher\EventDispatcherInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
@@ -21,7 +21,7 @@ class RegisterController extends AbstractController
     public function register(
         UserPasswordEncoderInterface $passwordEncoder,
         Request $request,
-        EventDispatcher $eventDispatcher
+        EventDispatcherInterface $eventDispatcher
     )
     {
         $user = new User();
@@ -34,6 +34,7 @@ class RegisterController extends AbstractController
                 $user->getPlainPassword()
             );
             $user->setPassword($password);
+            $user->setRoles(['ROLE_USER']);
 
             $entityManager = $this->getDoctrine()->getManager();
             $entityManager->persist($user);
