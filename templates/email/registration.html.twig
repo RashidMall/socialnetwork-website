@@ -1,7 +1,11 @@
 <h3>Welcome to the Whatter!</h3>
 
-Hello {{ user.fullName }}! Your account has being successfully registered.
+Hi {{ user.fullName }},
+You have successfully created a Whatter account.
+Please check on the link below to verify your email address and complete your registration.
 
-To login, go to <a href="{{ url('security_login') }}">login page</a>.
+<a href="{{ url('security_confirm', {'token': user.confirmationToken}) }}">
+    Verify your email
+</a>
 
 Thank You!
