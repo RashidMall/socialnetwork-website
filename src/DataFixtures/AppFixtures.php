@@ -4,6 +4,7 @@ namespace App\DataFixtures;
 
 use App\Entity\MicroPost;
 use App\Entity\User;
+use App\Entity\UserPreferences;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Component\Security\Core\Encoder\UserPasswordEncoderInterface;
@@ -52,6 +53,10 @@ class AppFixtures extends Fixture
         "Why do farts smell? For benefit of the deaf.",
         "Why'd the couple stop after 3 children? Cos they heard every fourth child born is chinese.",
         "You're slower than a herd of turtles stampeding through peanut butter."
+    ];
+
+    private const LANGUAGES = [
+        'en', 'fr'
     ];
 
     /**
@@ -105,6 +110,11 @@ class AppFixtures extends Fixture
 
             $this->setReference($userData['username'], $user);
 
+            $preferences = new UserPreferences();
+            $preferences->setLocale(self::LANGUAGES[rand(0, count(self::LANGUAGES)-1)]);
+            $manager->persist($preferences);
+
+            $user->setPreferences($preferences);
             $manager->persist($user);
         }
 
