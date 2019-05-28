@@ -43,7 +43,7 @@ class AppFixtures extends Fixture
         for they are subtle and will whiz on your computer.",
         "I wonder if you choke a smurf, what color does it turn?",
         "I'd explain it to you, but your brain would explode.",
-        "I've got the ship, you've got the harbor ... what say we tie up for the night?",
+        "I am on a seafood diet. I see food, and I eat it.",
         "It's no accident that stressed spelled backwards is desserts.",
         "Just because you're paranoid, it doesn't mean they're NOT out to get you.",
         "Lightyears ahead! Just a phonecall away!",
@@ -51,7 +51,7 @@ class AppFixtures extends Fixture
         "My Reality Check bounced.",
         "What did the drummer get on his IQ test? Drool...",
         "Why do farts smell? For benefit of the deaf.",
-        "Why'd the couple stop after 3 children? Cos they heard every fourth child born is chinese.",
+        "I don't need a hair stylist, my pillow gives me a new hairstyle every morning.",
         "You're slower than a herd of turtles stampeding through peanut butter."
     ];
 
