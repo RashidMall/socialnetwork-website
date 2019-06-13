@@ -21,7 +21,7 @@ class MailerTest extends TestCase
         $swiftMailer->expects($this->once())->method('send')
         ->with($this->callback(function ($subject){
             $messageStr = (string)$subject;
-            
+
             return strpos($messageStr, "From: admin@whatter.com") !== false
                 && strpos($messageStr, "Content-Type: text/html; charset=utf-8") !== false
                 && strpos($messageStr, "Subject: Welcome to the Whatter!") !== false
